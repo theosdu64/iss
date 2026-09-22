@@ -7,8 +7,7 @@ def call_api(methode, url):
         response = requests.request(methode, url, timeout=10)
         return response.json()
     except requests.RequestException as e:
-        print("API call Error", e)
-        return "Call api Error"
+        return f"Call api Error {e}"
 
 
 def format_timestamp(timestamp):
@@ -44,7 +43,6 @@ def astronauts_position():
             })
 
         return astronauts
-
     else:
         return "No data"
 

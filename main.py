@@ -20,8 +20,7 @@ while continuer:
         print(astronauts_position())
 
     elif choix == "0":
-        print("Au revoir !")
+        print("Au revoir")
         continuer = False
-
     else:
-        print("Choix invalide. Veuillez choisir une option entre 0 et 3.")
+        print("Choix invalide. Veuillez choisir une option entre 0 et 2")
